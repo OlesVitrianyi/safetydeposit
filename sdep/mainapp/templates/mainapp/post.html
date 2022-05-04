@@ -1,0 +1,35 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div id="news">
+        <div id="container_post" class="container-md pt-5">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8">
+                    <!-- зображення -->
+                    {% if post.photo %}
+                        <p><img class="w-100 pt-5" src="{{post.photo.url}}"></p>
+                    {% endif %}
+
+                    <!--заголовок та текст допису -->
+                    {% autoescape off %}  <!-- екранування, для того щоб спрацювували теги при введенні особливого тексту типу <H1>,прописом, жирного тексту і т.п.-->
+                        <h1>{{post.title}}</h1>
+                        <p>{{post.content|linebreaks}}</p> <!-- linebreaks - розрив рядків-->
+                    {% endautoescape %}
+
+                    <!--завантаження додатків-->
+                    {% if post.document %}        <!-- 'p' changing to 'post' -->
+                        <p><a href="{{post.document.url}}">Завантажити додаток</a></p> <!-- 'p' changing to 'post' -->
+                    {% endif %}
+
+                    <!-- категорія і дата створення-->
+                    <div class="article-panel">
+                        <!--категорія <p class="first">Категорія: {{post.cat}}</p>-->
+                        <p class="last">{{post.time_update|date:"d-m-Y H:i"}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

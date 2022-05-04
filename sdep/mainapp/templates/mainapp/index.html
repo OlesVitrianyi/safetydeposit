@@ -1,0 +1,247 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block mainvideo %}
+<div id="main_video" class="container-mb pt-5"> <!--container-fluid-->
+    <div class="row justify-content-md-center">
+        <div class="col-lg-8">
+        <!--<div class="col-md-8 col-sm-12">-->
+            <div class="ratio ratio-16x9">
+    <!-- ?autoplay=1 - автовідтворення
+             &mute=1 - без звуку при старті відтворення (обов'язково для Chrome)
+             &controls=0 - без відображення панелі керування
+             &showinfo=0 - не відображається інформація про відео
+             &loop=1 - повтор відео, разом з &playlist=ED1o4ZHrQJM(id відео)
+             &modestbranding=1 - відсутній логотип YouTube
+             &rel=0 схожі відео відтворюватись не будуть
+             &cc_load_policy=1 - титри вмикаються одразу-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LrP24y0YO4U?autoplay=0
+                &mute=1&controls=1&showinfo=0&loop=1&playlist=LrP24y0YO4U&modestbranding=1&rel=0&cc_load_policy=1" title="Safety Deposit Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block accordion %}
+<div class="container-mb pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-8">
+            <div class="accordion" id="accordionExample">
+                <h2 class="text-center" style="color: #4b7604">SAFETY DEPOSIT</h2>
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-question-circle-fill"></i>
+                            ЧОМУ "SAFETY DEPOSIT" ?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            КРЕДИТУВАННЯ РЕАЛЬНОГО ДІЮЧОГО БІЗНЕСУ
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-cash-coin"></i>
+                            КРЕДИТУВАННІ У НЕОБХІДНИХ ОБСЯГАХ
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-chat-right-text-fill"></i>
+                            ЯКІСНИЙ СУПРОВІД ТА ЖОДНИХ РИЗИКІВ
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Это тело аккордеона четвертого элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block headpost %}
+<div class="container"> <!--звуження -->
+    <div id="main_hello" class="container-fluid"><!--container-fluid-->
+      <div class="row">
+        {% for p in hposts %} <!-- posts   object_list -->
+          <div class="col-md-8 col-sm-12">
+            {% if p.photo %}
+              <img id="main_hello_image" class="w-100" src="{{p.photo.url}}">
+            {% endif %}
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <div id="main_title" class="position-relative top-50 start-50 translate-middle">
+              <h2>
+                <a id="main_title_text" href="{{ p.get_absolute_url }}" style="color: black">
+                  {{ p.title }}
+                </a>
+              </h2>
+              <!--<p><a id="main_title_read_more" href="{{ p.get_absolute_url }}">ЧИТАТИ БІЛЬШЕ</a></p>-->
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block news %}
+<!--news-->
+<div id="block_news"> <!-- важливо для перескакування в межах однієї сторінки -->
+  <div class="container">
+    <h3 id="header_news" class="text-center" style="color: #4b7604"><b>НОВИНИ</b></h3>
+      <div class="container-fluid m-auto my-2">
+        <div class="row">
+
+            {% for p in posts %}
+                <div class="col-md-4 col-sm-6"> <!-- <div class="col-md-4 col-sm-6"> -->
+                    <!--зображення-->
+                    {% if p.photo %}
+                        <img class="w-100" src="{{p.photo.url}}">
+                    {% endif %}
+
+                    <!-- текст статті -->
+                    <h4 id="news_title_preview">{{p.title}}</h4>
+                    {% autoescape off %}
+                    <p>{{p.content|linebreaks|truncatechars:50}}</p>
+                    {% endautoescape %}
+                    <div class="clear"></div>
+                    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читати допис</a></p>
+                    <!-- line -->
+                    <hr>
+                     <!--завантаження додатків!!!!!-->
+                    {% if p.document %}
+                        <p><a href="{{ p.document.url }}">Завантажити додаток</a></p>
+                    {% endif %}
+                    <!-- категорія і дата створення-->
+                    <div class="article-panel">
+                        <!--<p class="first">Категорія: {{p.cat}}</p>-->
+                    <!--<p class="last">Публікація: {{p.time_update|date:"d-m-Y H:i:s"}}</p>-->
+                        <p class="last">{{p.time_update|date:"d-m-Y"}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <!-- button -->
+            <div class="d-grid col-4 mx-auto">
+                <!--<button type="button" class="btn btn-outline-success">ЧИТАТИ БІЛЬШЕ</button>-->
+                <a class="btn btn-outline-success" href="{% url 'news' %}" role="button">БІЛЬШЕ НОВИН</a>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block information %}
+<!--news-->
+<div id="block_information">  <!-- важливо для перескакування в межах однієї сторінки -->
+  <div class="container"> <!-- style="color:#121773"-->
+    <h3 id="header_information" class="text-center" style="color: #4b7604"><b>ІНФОРМАЦІЯ</b></h3>
+      <div class="container-fluid m-auto">
+        <div class="row">
+
+            {% for p in iposts %}
+                <div class="col-md-4 col-sm-6">
+                    <!--зображення-->
+                    {% if p.photo %}
+                        <img class="w-100" src="{{p.photo.url}}">
+                    {% endif %}
+
+                    <!-- текст статті -->
+                    <h4 id="information_title_preview">{{p.title}}</h4>
+                    {% autoescape off %}
+                    <p>{{p.content|linebreaks|truncatechars:50}}</p>
+                    {% endautoescape %}
+
+                    <div class="clear"></div>
+                    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читати допис</a></p>
+                    <hr>
+
+                    <!--завантаження додатків-->
+                    {% if p.document %}
+                        <p><a href="{{p.document.url}}">Завантажити додаток</a></p>
+                    {% endif %}
+
+                    <!-- категорія і дата створення-->
+                    <div class="article-panel">
+                    <!--<p class="first">Категорія: {{p.cat}}</p>-->
+                    <!--<p class="last">Публікація: {{p.time_update|date:"d-m-Y H:i:s"}}</p>-->
+                        <p class="last">{{p.time_update|date:"d-m-Y"}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <!-- button -->
+            <div class="d-grid col-4 mx-auto">
+                <a class="btn btn-outline-success" href="{% url 'information' %}" role="button">ЧИТАТИ БІЛЬШЕ</a>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block our_partners %}
+
+<div class="container-mb pt-2">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-8" id="our_partners">
+                <div class="text-center">
+                    <h2 id='our_partners_title' style="color: white">НАШІ ПАРТНЕРИ</h2>
+                    <div class="mblank-2">
+
+                        <a href="https://www.oschadbank.ua/">
+                            <img id="oschadbank_logo" src="{% static 'mainapp/images/our_partners/oschadbank_200x100.webp' %}" class="rounded" alt="Ощадбанк">
+                        </a>
+                        <a href="https://bank.gov.ua/">
+                            <img id="nbu_logo" src="{% static 'mainapp/images/our_partners/nbu_294x100.webp' %}" class="rounded" alt="Національний банк України">
+                        </a>
+                        <!-- сторінка FB не відображається -->
+                        <a href="https://www.facebook.com/YABLAGODIJNYK">
+                            <img id="ya_blagodiynyk_logo" src="{% static 'mainapp/images/our_partners/ya_blagodiynyk_200x100.webp' %}" class="rounded" alt="Я Благодійник">
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container">
+    <div class="row">
+        <div class="col-12 text-center" id="our_partners">
+            <h2 class="text-black">НАШІ ПАРТНЕРИ</h2>
+            <img src="{% static 'mainapp/images/our_partners/oschadbank_200x100.webp' %}" class="rounded" alt="Ощадбанк">
+        </div>
+    </div>
+</div>-->
+
+{% endblock %}

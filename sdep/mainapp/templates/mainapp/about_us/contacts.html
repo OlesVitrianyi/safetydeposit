@@ -1,0 +1,42 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block contacts %}
+    <div id="container_post" class="container-md pt-5">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+
+                <img class="w-100" id="" src="{% static 'mainapp/images/about_us/contacts/contacts.webp' %}" alt="Safety Deposit">
+
+                <h1 id="contacts_logo" class="pt-5" style="color: #4b7604">SAFETY DEPOSIT</h1>
+                <br />
+                <h2 style="font-size: 23px">Адреса головного офісу</h2>
+                    <div style="font-size: 16px">
+                        <p>вул. Озерна, 20, м.Хмельницький, Україна, 29015</p>
+                    </div>
+                        <!-- google map -->
+                        <!--<iframe class="w-100 pt-3" height="150" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.39376921507!2d28.43630228162566!3d49.23102315495656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5d498e166399%3A0x35bd8ea3657f2d5c!2sBE%20FIT!5e0!3m2!1suk!2sua!4v1627240004864!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+                        <iframe class="w-100 pt-3" height="150" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4596.054314958685!2d27.014108562449426!3d49.44116435274489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473207a474fcb4a3%3A0x69a270b4bdfa9d13!2z0J7Qt9C10YDQvdCwINCy0YPQu9C40YbRjywgMjAsINCl0LzQtdC70YzQvdC40YbRjNC60LjQuSwg0KXQvNC10LvRjNC90LjRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjkwMDA!5e0!3m2!1suk!2sua!4v1648722307938!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <br />
+                            <div class="pt-3" id="tel">
+                                <i class="bi bi-phone-fill" style="color: #4b7604"></i><a href="tel:+380961155055" style="color: #4b7604">+38 096 115 50 55</a><br>
+                            </div>
+                        <p><i class="bi bi-envelope-fill" style="color: #4b7604"></i><a href="mailto:sdepdeps@gmail.com" style="color: #4b7604">sdepdeps@gmail.com</a><br>
+
+
+                <h2 class="pt-3" style="font-size: 23px">Ми працюємо</h2>
+                <div class="pt-2" style="font-size: 16px">
+                    Пн 9:00-18:00<br>
+                    Вт 9:00-18:00<br>
+                    Ср 9:00-18:00<br>
+                    Чт 9:00-18:00<br>
+                    Пт 9:00-18:00<br>
+                    Сб 9:00-15:00<br>
+                    <div style="color:#DC3545">Нд - вихідний</div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

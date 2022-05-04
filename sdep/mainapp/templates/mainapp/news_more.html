@@ -1,0 +1,45 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block news_more %}
+
+<div id="block_news">
+  <div class="container">
+    <h3 id="header_news_more" class="text-center" style="color: #4b7604"><b>НОВИНИ</b></h3>
+      <div class="container-fluid m-auto my-2">
+        <div class="row">
+
+            {% for p in posts %}
+                <div class="col-md-4 col-sm-6"> <!-- <div class="col-md-4 col-sm-6"> -->
+                    <!--зображення-->
+                    {% if p.photo %}
+                        <img class="w-100" src="{{p.photo.url}}">
+                    {% endif %}
+
+                    <!-- текст статті -->
+                    <h4 id="news_title_preview">{{p.title}}</h4>
+                    {% autoescape off %}
+                    <p>{{p.content|linebreaks|truncatewords:50}}</p>
+                    {% endautoescape %}
+                    <div class="clear"></div>
+                    <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читати допис</a></p>
+                    <hr>
+                    <!--завантаження додатків-->
+                    {% if p.document %}
+                        <p><a href="{{p.document.url}}">Завантажити додаток</a></p>
+                    {% endif %}
+                    <!-- категорія і дата створення-->
+                    <div class="article-panel">
+                    <!--<p class="first">Категорія: {{p.cat}}</p>-->
+                    <!--<p class="last">Публікація: {{p.time_update|date:"d-m-Y H:i:s"}}</p>-->
+                        <p class="last">{{p.time_update|date:"d-m-Y"}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

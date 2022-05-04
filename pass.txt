@@ -1,0 +1,61 @@
+http://127.0.0.1:8000/admin/
+login: admin
+pass: Fd4k97fGGN
+
+gmail
+login: sdepdeps@gmail.com
+pass: syfniv-qiztyb-fyKca5
+
+instagram/safety_deposit
+login: +380961155055
+pass: xaVzum-baqko1-zuzsen
+
+#доменне ім'я
+https://www.ukraine.com.ua/hostingcart/
+login: sdepdeps@gmail.com
+#sdp.com.ua
+ID: 717296
+
+#підпис документів PAPERLESS
+https://paperless.com.ua
+КРЕДИТНА СПІЛКА "СЕЙФТІ ДЕПОЗІТ"
+login: sdepdeps@gmail.com
+pass: big-fire-17b-K
+
+# підпис документів ВЧАСНО
+https://vchasno.ua/auth/login
+login: sdepdeps@gmail.com
+pass: sd43-Rt35-4A
+
+# hosting, Khmelnytskyi
+gmhost.com.ua
+log: chuk.volodymyr@ukr.net
+pass: 28.05.79.2900223139
+domain name: 473003-vhost-chuk.gm-host.pp.ua
+Username: 473003-chuk
+Password: wNR0FUv0958T
+sdeposit.com.ua
+
+https://hyperhost.ua/uk/hosting
+log: sdepdeps@gmail.com
+pass: @vY5F>C!
+Ваш ID: 82073
+log: sdpcomua
+pass: zytpew-niRho2-domgor
+~ % ssh sdpcomua@195.54.163.133
+host: 195.54.163.133
+log: sdpcomua
+pass: sC8+j89jy;8TTQ
+
+hostpro.ua
+sdepdeps@gmail.com
+pass: 6Uxdh.N6+2yx
+
+https://www.pythonanywhere.com/
+Username: VolodymyrChuk
+Email: sdepdeps@gmail.com
+pass: 4p_Cxd8?B5A-qx%
+
+username: safetydeposit
+pass: 3qz&7)yC$RJvXZM
+pass https: 3qz7yCRJvXZM

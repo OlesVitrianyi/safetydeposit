@@ -1,0 +1,146 @@
+/*шрифти Google*/
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');*/
+/*'Merriweather'*/
+/*@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+/*fonts*/
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: url('fonts/ProximaNovaCond-Black/ProximaNovaCond-Black.woff2') format('woff2'),
+         url('fonts/ProximaNovaCond-Black/ProximaNovaCond-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mrs_onionregular';
+    src: url('fonts/mrs_onion/mrs_onion-webfont.woff2') format('woff2'),
+         url('fonts/mrs_onion/mrs_onion-webfont.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('fonts/ArialNova-Light/ArialNova-Light.woff2') format('woff2'),
+         url('fonts/ArialNova-Light/ArialNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+:root {
+    --color1: #99cc33; /* світло-зелений*/
+    --color2: #4b7604; /* темно-зелений*/
+}
+.navbar, footer, .accordion-item, .accordion-button {
+    background: var(--color1);
+    background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to right,  var(--color1) 0%,var(--color2)100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1);
+}
+.dropdown-menu {
+    background-color: var(--color1);
+}
+#our_partners {
+    background-color: var(--color2);
+}
+.btn-outline-success {
+    color: var(--color2);
+    border-color: var(--color2);
+}
+.dropdown-item, .accordion-body, .accordion-button, .bi, footer {
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--color2);
+    box-shadow: insert 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+* {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Arial Nova', normal;
+}
+
+.navbar, h1, h2, h3, h4, h5, h6, a.btn.btn-outline-success {
+/*   font-family: 'Proxima Nova Condensed', normal;*/
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.accordion-body {
+    font-family: 'mrs_onionregular', normal;
+}
+
+#our_partners, {
+    padding: 20px 0;
+}
+#logo_footer, #our_partners_title {
+    margin: 10px 0 5px 12px;
+}
+#contacts_footer, #permits_footer, #contacts_footer_text {
+    margin: 18px 0 0 12px;
+}
+
+#logo_footer_text, #oschadbank_logo, #nbu_logo, #ya_blagodiynyk_logo{
+    margin: 1px 0 15px 12px;
+}
+
+.navbar-brand {
+    margin-bottom: 5px;
+}
+/*#navbarSupportedContent*/
+
+#logo_nav {
+    margin-left: 12px;
+}
+
+#social_networks, #permits_footer {
+    margin-bottom: 10px;
+}
+.bi {
+    font-size: 2em;
+    margin-right: 12px;
+}
+/*
+#donate {
+    font-weight: bold;
+}*/
+
+#block_news, #header_information_more, #header_news_more {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*font-family: 'Roboto';*/
+}
+#main_hello {
+    margin-top: 48px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#main_title {
+    padding-left: 16px;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: var(--color2);
+    border-color: var(--color2);
+}
+#news_title_preview, #information_title_preview {
+    margin-top: 1em;
+}
+
+
+

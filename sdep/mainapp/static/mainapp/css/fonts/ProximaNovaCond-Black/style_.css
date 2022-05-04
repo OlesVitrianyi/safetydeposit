@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Proxima Nova Condensed';
+    src: local('Proxima Nova Condensed Black'), local('Proxima-Nova-Condensed-Black'),
+        url('ProximaNovaCond-Black.woff2') format('woff2'),
+        url('ProximaNovaCond-Black.woff') format('woff'),
+        url('ProximaNovaCond-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
